@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Drag and drop files</p>
+    
+    <div class="drop-area" id="drop-area">
+        <h3>Drop Files Here</h3>
+        <p>Or</p>
+        <input type="file" id="fileInput" multiple hidden>
+        <button class="button" id="browseButton">Browse Files</button>
+    </div>
+    
+    <div class="file-list" id="file-list">
+        <div class="file-list-header">
+            <h3>Files in Uploads Directory:</h3>
+            <button class="button refresh-button" id="refreshButton">Refresh List</button>
+        </div>
+        <div id="files"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
